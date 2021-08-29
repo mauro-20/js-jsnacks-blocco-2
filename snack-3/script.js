@@ -5,10 +5,11 @@
 var firstName = ['mario', 'luigi', 'giorgia', 'anna', 'clara'];
 var lastName = ['rossi', 'ferrari', 'bianchi', 'fumagalli', 'bontempi'];
 var guests = [];
-var guest = '';
 
 for (var i = 0; i < 3; i++){
-  guest = `${firstName[Math.floor(Math.random() * firstName.length)]} ${lastName[Math.floor(Math.random() * lastName.length)]}`
+  var indexFirstName = Math.floor(Math.random() * firstName.length)
+  var indexLastName = Math.floor(Math.random() * lastName.length)
+  var guest = `${firstName[indexFirstName]} ${lastName[indexLastName]}`
   guests.push(guest)
 }
 
